@@ -1,0 +1,8 @@
+{
+  "name": "webpack-tutorial",
+  "version": "1.0",
+  "main": "index.js",
+  "repository": "git@github.com:eugenekgn/webpack-tutorial.git",
+  "author": "Eugene Kagan",
+  "license": "MIT"
+}

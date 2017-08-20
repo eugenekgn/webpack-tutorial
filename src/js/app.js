@@ -1,3 +1,5 @@
+import { secretButton, secretParagraph } from './dom-loader';
+
 let showSecret = false;
 
 const toggleSecretState = () => {

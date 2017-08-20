@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "git@github.com:eugenekgn/webpack-tutorial.git",
   "author": "Eugene Kagan",
-  "license": "MIT"
+  "scripts": {
+    "build" : "webpack ./src/js/app.js ./dist/bundle.js",
+    "build:prod" : "webpack ./src/js/app.js ./dist/bundle.js -p"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  }
 }

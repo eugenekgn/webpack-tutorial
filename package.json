@@ -5,12 +5,16 @@
   "repository": "git@github.com:eugenekgn/webpack-tutorial.git",
   "author": "Eugene Kagan",
   "scripts": {
-    "build": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js",
+    "build": "webpack-dev-server",
     "build:prod": "webpack ./src/js/app.js ./dist/bundle.js -p"
   },
   "license": "MIT",
   "devDependencies": {
+    "css-loader": "^0.28.5",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
-  }
+  },
+  "dependencies": {}
 }

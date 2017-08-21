@@ -1,6 +1,12 @@
-import '../css/main.css';
-import '../css/input-elements.css'
-import { secretButton, secretParagraph } from './dom-loader';
+import '../style/main.scss';
+import RandomGenerator from './random-generator';
+import {
+	secretButton,
+	secretParagraph,
+	outputParagraph,
+	buttonRndInt,
+	buttonRndRange
+} from './dom-loader';
 
 let showSecret = false;
 
@@ -26,6 +32,16 @@ const updateSecretParagraph = () => {
 	}
 }
 
+const outputRandomInt = () => {
+	outputParagraph.textContent = RandomGenerator.randomInteger();
+}
 
+const outputRandomRange = () => {
+	outputParagraph.textContent = RandomGenerator.randomRange(1, 500);
+}
+
+
+buttonRndInt.addEventListener('click', outputRandomInt);
+buttonRndRange.addEventListener('click', outputRandomRange);
 secretButton.addEventListener('click', toggleSecretState);
 updateSecretParagraph();

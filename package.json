@@ -5,8 +5,8 @@
   "repository": "git@github.com:eugenekgn/webpack-tutorial.git",
   "author": "Eugene Kagan",
   "scripts": {
-    "build": "webpack-dev-server",
-    "build:prod": "webpack -p",
+    "dev": "webpack-dev-server",
+    "build": "webpack -p",
     "delete": "t"
   },
   "license": "MIT",
@@ -28,5 +28,9 @@
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "imagemin": "^5.3.1",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.1"
+  }
 }
